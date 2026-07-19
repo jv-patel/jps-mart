@@ -509,7 +509,7 @@ function proceedToCheckout() {
     // Generate UPI QR
     const qrImg = document.querySelector('#upi-qr-box img');
     if (qrImg) {
-      qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=upi://pay?pa=9016240490@ptyes&pn=JPsMart&am=${totals.grandTotal}&cu=INR`;
+      qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=upi://pay?pa=9723415082@ptaxis&pn=JPsMart&am=${totals.grandTotal}&cu=INR`;
     }
     
     // Add WhatsApp Payment Confirm Button
@@ -589,7 +589,7 @@ function validatePincode(val) {
 }
 
 function copyUPI() {
-  const upi = "9016240490@ptyes";
+  const upi = "9723415082@ptaxis";
   navigator.clipboard.writeText(upi).then(() => {
     showToast("UPI ID Copied!");
   });
@@ -721,7 +721,7 @@ Address: ${orderData.address}
 ⚡ Delivering in 10 minutes!
 Track: jps-mart.vercel.app`;
 
-  const phone = orderData.customerPhone !== 'guest' ? orderData.customerPhone.replace('+91', '') : '9016240490';
+  const phone = orderData.customerPhone !== 'guest' ? orderData.customerPhone.replace('+91', '') : '919722415082';
   window.open(`https://wa.me/91${phone}?text=${encodeURIComponent(msg)}`, '_blank');
   
   // Start countdown
@@ -754,9 +754,9 @@ function confirmUPIPaymentOnWA(amount) {
   const payMsg = `💳 *JPs Mart - Payment Done!*
 Order ID: ${orderId}
 Amount Paid: ₹${amount}
-UPI ID: 9016240490@ptyes`;
+UPI ID: 9723415082@ptaxis`;
 
-  window.open(`https://wa.me/919016240490?text=${encodeURIComponent(payMsg)}`, '_blank');
+  window.open(`https://wa.me/91919722415082?text=${encodeURIComponent(payMsg)}`, '_blank');
 }
 
 function trackOrder() {

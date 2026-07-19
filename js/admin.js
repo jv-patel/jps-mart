@@ -84,12 +84,12 @@ async function openAdminLogin() {
   }
   
   const u = prompt("Enter Admin Username:");
-  if(u === 'jpsmart_admin') {
+  if(u === 'Jeel') {
     const p = prompt("Enter Password:");
     
     // Hash check
     const pHash = await hashPassword(p);
-    const targetHash = await hashPassword('SM@2024#Secure!');
+    const targetHash = await hashPassword('Jeel_Patel@2536');
     
     if(pHash === targetHash) {
       isAdmin = true;
