@@ -721,7 +721,7 @@ Address: ${orderData.address}
 ⚡ Delivering in 10 minutes!
 Track: jps-mart.vercel.app`;
 
-  const phone = orderData.customerPhone !== 'guest' ? orderData.customerPhone.replace('+91', '') : '919722415082';
+  const phone = orderData.customerPhone !== 'guest' ? orderData.customerPhone.replace('+91', '') : '919723415082';
   window.open(`https://wa.me/91${phone}?text=${encodeURIComponent(msg)}`, '_blank');
   
   // Start countdown
@@ -756,7 +756,7 @@ Order ID: ${orderId}
 Amount Paid: ₹${amount}
 UPI ID: 9723415082@ptaxis`;
 
-  window.open(`https://wa.me/91919722415082?text=${encodeURIComponent(payMsg)}`, '_blank');
+  window.open(`https://wa.me/91919723415082?text=${encodeURIComponent(payMsg)}`, '_blank');
 }
 
 function trackOrder() {
