@@ -1,0 +1,63 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+/* Antigravity Container */
+.antigravity-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 350px;
+  background: linear-gradient(180deg, rgba(26,26,46,0.6), rgba(22,33,62,0.6));
+}
+
+/* Floating particle base */
+.float-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: #4ec88a;
+  opacity: 0.6;
+  pointer-events: none;
+  animation: floatUp linear infinite;
+}
+
+/* Slight bobbing for larger items */
+.float-item {
+  animation: floatBob ease-in-out infinite;
+}
+
+@keyframes floatUp {
+  0%   { transform: translateY(100%); opacity: 0; }
+  10%  { opacity: 0.6; }
+  90%  { opacity: 0.4; }
+  100% { transform: translateY(-120%); opacity: 0; }
+}
+
+@keyframes floatBob {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-20px); }
+}

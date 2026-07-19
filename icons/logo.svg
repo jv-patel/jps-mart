@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <circle cx="256" cy="256" r="256" fill="#0a1f16"/>
+  <!-- Bag Handle -->
+  <path d="M 192 200 Q 192 80 256 80 Q 320 80 320 200" fill="none" stroke="#4ec88a" stroke-width="36" stroke-linecap="round"/>
+  <!-- Shopping Bag -->
+  <rect x="110" y="200" width="292" height="210" rx="32" fill="#4ec88a"/>
+  <!-- Lightning Bolt -->
+  <polygon points="275,160 185,290 250,290 230,380 325,240 260,240" fill="#ffffff"/>
+</svg>

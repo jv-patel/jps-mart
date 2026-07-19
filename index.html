@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>JPs Mart</title>
+  
+  <link rel="icon" type="image/png" href="/images/icons/icon-192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0a1f16">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="JPsMart">
+  <meta property="og:title" content="JPs Mart - 10 Min Grocery Delivery">
+  <meta property="og:description" content="Get fresh groceries delivered in 10 minutes anywhere in Anand">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/images/icons/icon-512.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a1f16;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+      color: white;
+      transition: opacity 0.5s;
+    }
+    .logo-container {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .app-title {
+      font-family: 'Baloo 2', cursive;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+    .tagline {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #4ec88a;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    .loader {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(78, 200, 138, 0.2);
+      border-top-color: #4ec88a;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-container">
+    <img src="/images/icons/icon-512.png" alt="JPsMart Logo">
+  </div>
+  
+  <div class="app-title">JPs Mart</div>
+  <div class="tagline">10 Min Delivery</div>
+  
+  <div class="loader"></div>
+
+  <script>
+    setTimeout(() => {
+      document.body.style.opacity = '0';
+      setTimeout(() => {
+        window.location.href = 'app.html';
+      }, 500);
+    }, 2500); // 2.5s wait
+  </script>
+
+</body>
+</html>
