@@ -583,7 +583,7 @@ async function requestNotificationPermission() {
   try {
     const permission = await Notification.requestPermission();
     if (permission === 'granted') {
-      showToast('Notification permission granted! 🔔', 'success');
+      showToast('Notification permission granted! ðŸ””', 'success');
       return true;
     } else {
       showToast('Notification permission denied', 'warning');
@@ -593,4 +593,4 @@ async function requestNotificationPermission() {
     console.error("Error requesting notifications:", err);
     return false;
   }
-}
+                                                           }
