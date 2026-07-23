@@ -104,7 +104,7 @@ async function openAdminLogin() {
       if (attempts >= 3) {
         localStorage.setItem('sm_adminLock', (Date.now() + 30 * 60 * 1000).toString());
         localStorage.setItem('sm_adminAttempts', '0');
-        showToast('Locked out for 30 minutes.');
+        showToast('Locked out for 2 minutes.');
       } else {
         localStorage.setItem('sm_adminAttempts', attempts.toString());
         showToast(`Invalid password. ${3 - attempts} attempts left.`);
